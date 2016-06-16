@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		94339EF11D11E08900DD0316 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94339EF01D11E08900DD0316 /* AppDelegate.swift */; };
-		94339EF31D11E08900DD0316 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94339EF21D11E08900DD0316 /* ViewController.swift */; };
+		94339EF31D11E08900DD0316 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94339EF21D11E08900DD0316 /* HelpViewController.swift */; };
 		94339EF61D11E08900DD0316 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94339EF41D11E08900DD0316 /* Main.storyboard */; };
 		94339EF81D11E08900DD0316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94339EF71D11E08900DD0316 /* Assets.xcassets */; };
 		94339EFB1D11E08900DD0316 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94339EF91D11E08900DD0316 /* LaunchScreen.storyboard */; };
+		9450F10B1D1214450087FB1E /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450F10A1D1214450087FB1E /* LearnViewController.swift */; };
+		9450F10F1D1215A40087FB1E /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450F10E1D1215A40087FB1E /* TopicViewController.swift */; };
+		9450F1111D121C670087FB1E /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450F1101D121C670087FB1E /* VideoCell.swift */; };
+		946DF97F1D11F05200516CCE /* JSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946DF97E1D11F05200516CCE /* JSONHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		94339EED1D11E08900DD0316 /* iPhone Help.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPhone Help.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94339EF01D11E08900DD0316 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94339EF21D11E08900DD0316 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94339EF21D11E08900DD0316 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		94339EF51D11E08900DD0316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94339EF71D11E08900DD0316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94339EFA1D11E08900DD0316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		94339EFC1D11E08900DD0316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94339EFC1D11E08900DD0316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "iPhone Help/Info.plist"; sourceTree = "<group>"; };
+		9450F10A1D1214450087FB1E /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
+		9450F10E1D1215A40087FB1E /* TopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
+		9450F1101D121C670087FB1E /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		946DF97E1D11F05200516CCE /* JSONHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 			children = (
 				94339EEF1D11E08900DD0316 /* iPhone Help */,
 				94339EEE1D11E08900DD0316 /* Products */,
+				94339EFC1D11E08900DD0316 /* Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +64,40 @@
 			isa = PBXGroup;
 			children = (
 				94339EF01D11E08900DD0316 /* AppDelegate.swift */,
-				94339EF21D11E08900DD0316 /* ViewController.swift */,
-				94339EF41D11E08900DD0316 /* Main.storyboard */,
+				946DF9821D11F18100516CCE /* Models */,
+				946DF9811D11F18000516CCE /* Views */,
+				946DF9801D11F17D00516CCE /* Controllers */,
 				94339EF71D11E08900DD0316 /* Assets.xcassets */,
-				94339EF91D11E08900DD0316 /* LaunchScreen.storyboard */,
-				94339EFC1D11E08900DD0316 /* Info.plist */,
 			);
 			path = "iPhone Help";
+			sourceTree = "<group>";
+		};
+		946DF9801D11F17D00516CCE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9450F10E1D1215A40087FB1E /* TopicViewController.swift */,
+				9450F10A1D1214450087FB1E /* LearnViewController.swift */,
+				94339EF21D11E08900DD0316 /* HelpViewController.swift */,
+				9450F1101D121C670087FB1E /* VideoCell.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		946DF9811D11F18000516CCE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94339EF41D11E08900DD0316 /* Main.storyboard */,
+				94339EF91D11E08900DD0316 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		946DF9821D11F18100516CCE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				946DF97E1D11F05200516CCE /* JSONHandler.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94339EF31D11E08900DD0316 /* ViewController.swift in Sources */,
+				94339EF31D11E08900DD0316 /* HelpViewController.swift in Sources */,
+				9450F10B1D1214450087FB1E /* LearnViewController.swift in Sources */,
+				946DF97F1D11F05200516CCE /* JSONHandler.swift in Sources */,
+				9450F10F1D1215A40087FB1E /* TopicViewController.swift in Sources */,
 				94339EF11D11E08900DD0316 /* AppDelegate.swift in Sources */,
+				9450F1111D121C670087FB1E /* VideoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +328,7 @@
 				94339F011D11E08900DD0316 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
